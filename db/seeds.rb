@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+#
+require './lib/assets/a_random_walk_down_wall_street.rb'
+@book_highlights.each do |highlight|
+  Highlight.create(highlighted_text: highlight, book_title: 'A Random Walk Down Wall Street', author: 'Burton G. Malkiel')
+end
