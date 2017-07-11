@@ -7,7 +7,17 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 #
-require './lib/assets/a_random_walk_down_wall_street.rb'
-@book_highlights.each do |highlight|
-  Highlight.create(highlighted_text: highlight, book_title: 'A Random Walk Down Wall Street', author: 'Burton G. Malkiel')
+
+# TODO: could write a function that requires file after file and pushes highlights
+# to the database. basically read in each file in a folder in paul_books
+# can do this at some point after i go further in the app.
+# rake db:drop && rake db:create && rake db:migrate && rake db:seed
+# require './lib/assets/a_random_walk_down_wall_street.rb'
+
+
+Dir["./lib/assets/*.rb"].each do |file|
+  require file
+  @book_highlights.each do |highlight|
+    Highlight.create(highlighted_text: highlight, book_title: @book_title, author: @author, url: @url)
+  end
 end
