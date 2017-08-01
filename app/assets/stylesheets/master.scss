@@ -1,5 +1,14 @@
 @import "bootstrap";
 
+h2 span {
+  font-size: 24px;
+  color: #dddddd;
+}
+
+p {
+  font-size: 19px;
+}
+
 .clear {
   clear: both;
 }
@@ -31,4 +40,28 @@ header {
 
 hr {
   clear:both;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+.next-quote {
+  font-family: 'nobilemedium_italic', sans-serif;
+  font-size:18px;
+}
+
+.footer-blurb {
+  text-align: right;
+  font-size: 18px;
+}
+
+@media (max-width: 750px) {
+  .footer-blurb {
+    text-align: left;
+  }
+}
+
+::selection {
+  background-color: #f84342;
 }

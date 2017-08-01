@@ -11,20 +11,39 @@
   <body>
     <header class="row">
       <div class="col-3">
-        <div class="logo">
-          <img src="<%= asset_path( 'logo.png' ) %>"  alt="LOGO" height="55">
-        </div>
+        <%= link_to root_path, class: 'logo' do %>
+          <div class="logo">
+            <img src="<%= asset_path( 'logo.png' ) %>"  alt="LOGO" height="55">
+          </div>
+        <% end %>
       </div>
-      <div class="col-4 slogan">
-        Talk through your hi-lights
+      <div class="col col-sm-4 hidden-xs-down slogan">
+        Say hi through my HiLights
       </div>
-      <div class="col-5 links">
+      <div class="col-10 offset-1 offset-sm-0 col-sm-5 links">
         <%= link_to 'About', '#' %>
       </div>
     </header>
     <hr />
 
     <br class="clear" />
-    <%= yield %>
+
+    <div class="container">
+      <%= yield %>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6">
+            <%= link_to "Get me another HiLight!", "#", class: 'next-quote' %>
+          </div>
+          <div class="col-12 col-sm-6 footer-blurb">
+            Proudly hacked in NYC by <a href="https://github.com/paulyarabe", target="_blank">Paul Yarabe</a><br />
+          </div>
+
+        </div>
+      </div>
+    </div>
   </body>
 </html>
