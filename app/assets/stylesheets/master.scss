@@ -1,1 +1,34 @@
 @import "bootstrap";
+
+.clear {
+  clear: both;
+}
+
+header {
+  border-top: 9px solid #222222;
+}
+
+.logo {
+  position: relative;
+  border-radius: 100%;
+  margin: 10px 10px;
+  line-height: 16px;
+}
+
+.slogan {
+  padding-top: 26px;
+}
+
+.links {
+  padding-top: 26px;
+}
+
+.links a{
+  padding-top: 26px;
+  font-size: 25px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+hr {
+  clear:both;
+}
