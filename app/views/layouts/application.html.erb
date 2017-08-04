@@ -3,25 +3,27 @@
   <head>
     <title>Hilight</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => false %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
     <header class="row">
-      <div class="col-2">
-        <%= link_to root_path, class: 'logo' do %>
+      <div class="col-xs-3">
+        <%= link_to hilight_path, class: 'logo' do %>
           <div class="logo">
-            <img src="<%= asset_path( 'logo.png' ) %>"  alt="LOGO" height="55">
+            
+            <img src="<%= asset_path( 'logo.png' ) %>"  alt="LOGO" height="70">
           </div>
         <% end %>
       </div>
-      <div class="col col-sm-4 hidden-xs-down slogan">
+      <div class="col col-xs-4 hidden-xs slogan">
         Say hi through my HiLights
       </div>
-      <div class="col-10 offset-1 offset-sm-0 col-sm-5 links">
-        <%= link_to 'Learn more', 'https://paulyarabe.com', :target => "_blank" %>
+      <div class="col-xs-8 col-xs-offset-1 col-sm-offset-sm-0 col-sm-5 links">
+        <%= link_to 'Learn more', 'https://paulyarabe.com', :target => "_blank" %>&nbsp;&nbsp;&nbsp;
+        <%= link_to 'Topic Modeling', 'javascript:void(0)'%>
       </div>
     </header>
     <hr />
@@ -35,15 +37,15 @@
     <div class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-sm-6">
-            <%= link_to "Get me another HiLight!", "#", class: 'next-quote' %>
+          <div class="col-xs-12 col-sm-6">
+            <%= link_to "Get me another HiLight!", "/hilight", class: 'next-quote' %>
           </div>
-          <div class="col-12 col-sm-6 footer-blurb">
-            Proudly hacked in NYC by <a href="https://github.com/paulyarabe", target="_blank">Paul Yarabe</a><br />
+          <div class="col-xs-12 col-sm-6 footer-blurb">
+            Proudly hacked in NYC by <a href="https://github.com/paulyarabe", target="_blank">me</a><br />
           </div>
-
         </div>
       </div>
     </div>
+
   </body>
 </html>
