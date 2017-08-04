@@ -1,7 +1,9 @@
 class HilightsController < ApplicationController
 
-  def index
+  def random
     @highlight = Highlight.order("RANDOM()").first
+    render :index
+    #render json: @highlight
   end
 
 end
