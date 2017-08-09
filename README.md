@@ -6,7 +6,9 @@ rails server to get it up and running in localhost:3000
 Find the main page at localhost:3000/hilight
 Most of the styling is in application.html.erb.  Index.html.erb is where the main view sits.  Just splurts out a random highlight from the database.  You can see that it has the JSON rendering commented out, but ready to go if called upon.
 
-Yea!
+Keep getting more highlights by clicking the icon in the top left of the page.
+
+Yep, that's about it!
 
 
 ***
