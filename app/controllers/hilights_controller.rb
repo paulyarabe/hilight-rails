@@ -8,7 +8,7 @@ class HilightsController < ApplicationController
     # render json: @highlight.to_json(:include => :comments)
     # @highlights = Highlight.all.map{ |highlight| highlight.highlighted_text}
     # @sentences = @highlights.join(" ")
-    # render json: @sentences
+    render json: @highlight
   end
 
 end
