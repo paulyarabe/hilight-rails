@@ -5,7 +5,7 @@ class HilightsController < ApplicationController
   # get random hilight with Highlight.order("Random()").first
   def index
     @highlight = Highlight.order("Random()").first
-    render json: @highlight.to_json(:include => :comments)
+    # render json: @highlight.to_json(:include => :comments)
     # @highlights = Highlight.all.map{ |highlight| highlight.highlighted_text}
     # @sentences = @highlights.join(" ")
     # render json: @sentences
