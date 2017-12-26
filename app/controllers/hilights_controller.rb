@@ -4,7 +4,7 @@ class HilightsController < ApplicationController
   # how do i send too the comment(s) associated with that highlight?
   # get random hilight with Highlight.order("Random()").first
   def index
-    @sorted_by_book = Highlight.all.group_by(&:book_title)
+    @sorted_by_book = Highlight.all.order("book_title ASC").group_by(&:book_title)
     # {"a random walk.." => [#<Highlight id:1...>, ...]}
     # so, if you search the book title, or access the book title as a key,
     # the value should be an array of that book's highlights.
