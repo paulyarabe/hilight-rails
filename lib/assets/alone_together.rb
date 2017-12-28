@@ -9,4 +9,4 @@ end
 @book_highlights = notes_sans_dates.delete_if {|element| element==""}
 @author = 'Sherry Turkle'
 @book_title = 'Alone Together: Why We Expect More from Technology and Less from Each Other'
-@url = 'https://www.amazon.com/Alone-Together-Expect-Technology-Other/dp/0465031463'
+@url = 'https://www.amazon.com/Alone-Together-Expect-Technology-Other/dp/0465093655/ref=dp_ob_title_bk'

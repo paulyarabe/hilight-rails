@@ -9,4 +9,4 @@ end
 @book_highlights = notes_sans_dates.delete_if {|element| element==""}
 @author = 'Walter Isaacson'
 @book_title = 'Einstein: His Life and Universe'
-@url = 'https://www.amazon.com/Einstein-Life-Universe-Walter-Isaacson/dp/0743264746/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr='
+@url = 'https://www.amazon.com/Einstein-Life-Universe-Walter-Isaacson/dp/1501171380/ref=dp_ob_title_bk'

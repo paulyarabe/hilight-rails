@@ -10,4 +10,4 @@ end
 @book_highlights = notes_sans_dates.delete_if {|element| element==""}
 @author = 'Burton G. Malkiel'
 @book_title = 'A Random Walk Down Wall Street'
-@url = 'https://www.amazon.com/Random-Walk-Down-Wall-Street/dp/0393330338'
+@url = 'https://www.amazon.com/Random-Walk-down-Wall-Street/dp/0393352242/ref=dp_ob_title_bk'
