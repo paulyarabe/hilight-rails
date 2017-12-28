@@ -24,4 +24,9 @@ class HilightsController < ApplicationController
     render json: @sorted_by_urls
   end
 
+  def titles
+    @just_the_titles = Highlight.all.order("book_title ASC").group_by(&:book_title).keys
+    render json: @just_the_titles
+  end
+
 end

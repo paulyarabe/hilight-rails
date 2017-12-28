@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root 'hilights#index'
   # get '/hilight', to: 'hilights#index', as: 'hilight'
   get '/urls', to: 'hilights#urls', as: 'urls'
+  get '/titles', to: 'hilights#titles', as: 'titles'
 end
