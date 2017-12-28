@@ -19,4 +19,9 @@ class HilightsController < ApplicationController
     render json: @sorted_by_book
   end
 
+  def urls
+    @sorted_by_urls = Highlight.all.order("book_title ASC").group_by(&:url).keys
+    render json: @sorted_by_urls
+  end
+
 end
