@@ -8,6 +8,6 @@ end
 
 # get rid of the bookmarks
 @book_highlights = notes_sans_dates.delete_if {|element| element==""}
-@author = 'Doug Stephens'
-@book_title = 'Reengineering Retail: The Future of Selling in a Post-Digital World'
-@url = 'https://www.amazon.com/Reengineering-Retail-Future-Selling-Post-Digital/dp/1927958814/ref=sr_1_1?ie=UTF8&qid=1510331898&sr=8-1&keywords=reengineering+retail'
+@author = 'Philip Delves Broughton'
+@book_title = 'The Art of the Sale: Learning from the Masters About the Business of Life'
+@url = 'https://www.amazon.com/Art-Sale-Learning-Masters-Business/dp/0143122762/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1514748971&sr=8-1'
