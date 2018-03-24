@@ -5,7 +5,7 @@ class HilightsController < ApplicationController
   # render json: @highlight.to_json(:include => :comments)
 
   def index
-    @sorted_by_book = Highlight.all.order("book_title ASC").group_by(&:book_title)
+    @sorted_by_book = Highlight.all.order("book_title ASC, created_at ASC").group_by(&:book_title)
 
     # @highlight = Highlight.order("Random()").first
     # render json: @highlight
