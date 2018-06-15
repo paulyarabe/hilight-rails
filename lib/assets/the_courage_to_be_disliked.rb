@@ -9,4 +9,4 @@ end
 @book_highlights = notes_sans_dates.delete_if {|element| element==""}
 @author = 'Ichiro Kishimi and Fumitake Koga'
 @book_title = 'The Courage to be Disliked'
-@url = 'https://www.amazon.com/The-Courage-to-be-Disliked/dp/1760630497/ref=sr_1_3?s=books&ie=UTF8&qid=1528080535&sr=1-3&keywords=the+courage+to+be+disliked'
+@url = 'https://www.amazon.com/Courage-Be-Disliked-Phenomenon-Happiness/dp/1501197274/ref=pd_sbs_14_1?_encoding=UTF8&pd_rd_i=1501197274&pd_rd_r=3ed12568-70b7-11e8-95e1-c1c4cbe091a6&pd_rd_w=yBBpm&pd_rd_wg=Q8T4N&pf_rd_i=desktop-dp-sims&pf_rd_m=ATVPDKIKX0DER&pf_rd_p=5825442648805390339&pf_rd_r=MPH1YANZM8EVJZ8DXXR1&pf_rd_s=desktop-dp-sims&pf_rd_t=40701&psc=1&refRID=MPH1YANZM8EVJZ8DXXR1&dpID=41CHUNEvn4L&preST=_SY291_BO1,204,203,200_QL40_&dpSrc=detail#customerReviews'
