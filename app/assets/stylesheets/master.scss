@@ -1,0 +1,74 @@
+@import "bootstrap";
+
+h2 span {
+  font-size: 28px;
+  color: #dddddd;
+}
+
+p {
+  font-size: 19px;
+}
+
+.clear {
+  clear: both;
+}
+
+header {
+  border-top: 9px solid #222222;
+}
+
+.logo {
+  position: relative;
+  border-radius: 100%;
+  margin: 10px 20px;
+  line-height: 16px;
+}
+
+.slogan {
+  padding-top: 30px;
+  font-family: 'geometria-light';
+  // src: font_url('geometria-light-webfont.woff2') format('woff2'),
+  //      font_url('geometria-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-size: 26px;
+}
+
+
+.links a{
+  padding-top: 26px;
+  font-size: 23px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.links {
+  padding-top: 30px;
+}
+
+hr {
+  clear:both;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+.next-quote {
+  font-family: 'nobilemedium_italic', sans-serif;
+  font-size:18px;
+}
+
+.footer-blurb {
+  text-align: right;
+  font-size: 16px;
+}
+
+@media (max-width: 750px) {
+  .footer-blurb {
+    text-align: left;
+  }
+}
+
+::selection {
+  background-color: #f84342;
+}
